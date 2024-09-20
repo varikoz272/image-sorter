@@ -5,6 +5,7 @@ import java.io.File;
 import javax.swing.JFrame;
 
 import org.example.sort.BubbleSort;
+import org.example.sort.InsertionSort;
 
 public class App {
 
@@ -18,7 +19,7 @@ public class App {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
 
-        Display d = new Display(new BubbleSort());
+        Display d = new Display(new InsertionSort());
         frame.add(d);
         d.sort(Display.imageFromFile(new File("/home/admin-nahren/Desktop/Untitled.png")));
 
