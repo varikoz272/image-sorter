@@ -11,8 +11,10 @@ public class InsertionSort extends SortStrategy {
             while (j >= 0 && array[j] > key) {
                 array[j + 1] = array[j];
                 j = j - 1;
+                sleep();
             }
             array[j + 1] = key;
+            sleep();
         }
     }
 
