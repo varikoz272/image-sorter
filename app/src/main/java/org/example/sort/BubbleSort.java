@@ -11,7 +11,7 @@ public class BubbleSort extends SortStrategy {
                 }
 
                 if (sleepTime > 0)
-                    sleep(sleepTime);
+                    sleep();
             }
     }
 

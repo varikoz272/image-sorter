@@ -9,7 +9,7 @@ public abstract class SortStrategy implements Runnable {
     }
 
     public SortStrategy() {
-        this.sleepTime = 0; // 60 FPS
+        this.sleepTime = 0;
     }
 
     protected static void swap(int[] array, int i, int j) {
@@ -18,10 +18,10 @@ public abstract class SortStrategy implements Runnable {
         array[j] = temp;
     }
 
-    protected static void sleep(int duration) {
-        try {
-            Thread.sleep(duration);
-        } catch (Exception e) {
+    protected void sleep() {
+        long start = System.nanoTime();
+        while (System.nanoTime() < start + sleepTime) {
+
         }
     }
 
